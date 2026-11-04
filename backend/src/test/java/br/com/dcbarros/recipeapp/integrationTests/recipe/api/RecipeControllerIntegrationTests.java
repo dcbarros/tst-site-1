@@ -34,7 +34,7 @@ public class RecipeControllerIntegrationTests {
 
         assertEquals(HttpStatus.OK, response.getStatusCode());
         assertEquals(
-            Map.of("service", "recipe-app", "status", "ok"),
+            Map.of("service", "recipe-api", "status", "ok"),
             response.getBody()
         );
     }

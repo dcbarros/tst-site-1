@@ -16,6 +16,6 @@ public class RecipeControllerTest {
         ResponseEntity<Map<String, String>> response = controller.ping();
 
         assertEquals(200, response.getStatusCode().value());
-        assertEquals(Map.of("service", "recipe-app", "status", "ok"), response.getBody());
+        assertEquals(Map.of("service", "recipe-api", "status", "ok"), response.getBody());
     }
 }
